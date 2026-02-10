@@ -1,4 +1,5 @@
 <?= $this->extend('layouts/main') ?>
+
 <?= $this->section('content') ?>
 
 <section class="section">
@@ -26,14 +27,14 @@
                     <span><?= date('d M Y', strtotime($booking['date'])) ?></span>
                 </div>
                 <div class="detail-row">
-                    <span>Jumlah Orang</span>
+                    <span>Jumlah Peserta</span>
                     <span><?= $booking['guests'] ?> orang</span>
                 </div>
                 <div class="detail-row">
                     <span>Status</span>
                     <span class="badge <?= strtolower($booking['status']) ?>"><?= esc($booking['status']) ?></span>
                 </div>
-                <div class="detail-row">
+                <div class="detail-row total">
                     <span>Total</span>
                     <span class="price-large">Rp <?= number_format($booking['total'], 0, ',', '.') ?></span>
                 </div>
@@ -51,9 +52,10 @@
                 </div>
                 <div class="detail-row">
                     <span>Telepon</span>
-                    <span><?= esc($booking['suctomerPhone']) ?></span>
+                    <span><?= esc($booking['customerPhone']) ?></span>
                 </div>
             </div>
+
             <button class="btn btn-outline btn-block">Download E-Ticket</button>
         </div>
     </div>

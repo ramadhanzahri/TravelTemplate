@@ -1,4 +1,5 @@
 <?= $this->extend('layouts/main') ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-header">
@@ -27,17 +28,17 @@
         <div class="help-contact">
             <h3>Masih butuh bantuan?</h3>
             <p>Hubungi customer service kami</p>
-            <button class="btn btn-primary">Hubungu CS</button>
+            <button class="btn btn-primary">Hubungi CS</button>
         </div>
     </div>
 </section>
 
 <script>
     function toggleFaq(index) {
-        const answer = document.getElementById('faq-${index');
+        const answer = document.getElementById(`faq-${index}`);
         const icon = answer.previousElementSibling.querySelector('.faq-icon');
         answer.classList.toggle('active');
-        icon.textContent = answer.classList.contains('active') ? '-' : '+';
+        icon.textContent = answer.classList.contains('active') ? '−' : '+';
     }
 </script>
 

@@ -33,8 +33,8 @@
                         <input type="radio" name="payment" value="bank" checked>
                         <span>Transfer Bank</span>
                     </label>
-                    <label class="peymnet-item">
-                        <input type="redio" name="payment" value="ewallet">
+                    <label class="payment-item">
+                        <input type="radio" name="payment" value="ewallet">
                         <span>E-Wallet (GoPay, OVO, Dana)</span>
                     </label>
                     <label class="payment-item">

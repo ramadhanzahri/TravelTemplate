@@ -1,4 +1,5 @@
 <?= $this->extend('layouts/main') ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-header">
@@ -18,10 +19,12 @@
             <button class="chip">Adventure</button>
         </div>
 
-        <div>
+        <div class="grid">
             <?php foreach ($destinations as $destination): ?>
                 <?= view('partials/destination_card', ['destination' => $destination]) ?>
             <?php endforeach; ?>
         </div>
     </div>
 </section>
+
+<?= $this->endSection() ?>

@@ -1,4 +1,5 @@
 <?= $this->extend('layouts/main') ?>
+
 <?= $this->section('content') ?>
 
 <section class="page-header">
@@ -13,8 +14,8 @@
             <div class="profile-avatar">
                 <div class="avatar-circle"><?= strtoupper(substr($user['name'], 0, 1)) ?></div>
             </div>
-            <h1><?= esc($user['name']) ?></h1>
-            <p class="text-muted">Member Sejak <?= date('d M Y', strtotime($user['memberSince'])) ?></p>
+            <h2><?= esc($user['name']) ?></h2>
+            <p class="text-muted">Member sejak <?= date('d M Y', strtotime($user['memberSince'])) ?></p>
         </div>
 
         <div class="profile-info">
@@ -35,7 +36,7 @@
             </div>
         </div>
 
-        <button class="btn btn-primary brn-block">Edit Profile</button>
+        <button class="btn btn-primary btn-block">Edit Profile</button>
         <button class="btn btn-outline btn-block">Logout</button>
     </div>
 </section>

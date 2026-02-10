@@ -1,4 +1,5 @@
 <?= $this->extend('layouts/main') ?>
+
 <?= $this->section('content') ?>
 
 <section class="hero">
@@ -13,7 +14,7 @@
     <div class="container">
         <div class="search-box">
             <input type="text" placeholder="Cari destinasi atau paket wisata..." class="search-input">
-            <button class="btn-seaarch">Cari</button>
+            <button class="btn-search">Cari</button>
         </div>
     </div>
 </section>
@@ -36,18 +37,18 @@
     <div class="container">
         <h2 class="text-center">Mengapa Pilih Kami?</h2>
         <div class="features">
-            <div class="features-item">
-                <div class="features-icon">✓</div>
+            <div class="feature-item">
+                <div class="feature-icon">✓</div>
                 <h3>Harga Terbaik</h3>
                 <p>Dapatkan harga kompetitif untuk semua paket tour</p>
             </div>
-            <div class="features-item">
-                <div class="features-icon">✓</div>
+            <div class="feature-item">
+                <div class="feature-icon">✓</div>
                 <h3>Destinasi Lengkap</h3>
                 <p>Ratusan pilihan destinasi di seluruh Indonesia</p>
             </div>
-            <div class="features-item">
-                <div class="features-icon">✓</div>
+            <div class="feature-item">
+                <div class="feature-icon">✓</div>
                 <h3>Booking Mudah</h3>
                 <p>Proses booking cepat dan pembayaran aman</p>
             </div>

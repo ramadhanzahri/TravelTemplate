@@ -1,10 +1,12 @@
 <?= $this->extend('layouts/main') ?>
+
 <?= $this->section('content') ?>
 
 <section class="section">
     <div class="container">
         <h1><?= esc($package['name']) ?></h1>
-        <p class="location">📍 <?= esc($package['destination']) ?> . 🕐 <?= esc($package['duration']) ?></p>
+        <p class="location">📍 <?= esc($package['destination']) ?> • 🕐 <?= esc($package['duration']) ?></p>
+
         <div class="package-detail-content">
             <div class="detail-section">
                 <h3>Deskripsi Paket</h3>
@@ -13,7 +15,7 @@
 
             <div class="detail-section">
                 <h3>Itinerary</h3>
-                <ul class="itinerary-section">
+                <ul class="itinerary-list">
                     <?php foreach ($package['itinerary'] as $day): ?>
                         <li><?= esc($day) ?></li>
                     <?php endforeach; ?>
