@@ -3,7 +3,7 @@
 <?= $this->section('content') ?>
 
 <section class="hero">
-    <img src="<?= base_url('assets/img/hero.svg') ?>" alt="Travel Hero" class="hero-image">
+    <img src="<?= base_url('assets/img/hero.jpg') ?>" alt="Travel Hero" class="hero-image">
     <div class="hero-content">
         <h1>Jelajahi Indonesia Bersama Kami</h1>
         <p>Temukan destinasi impian dan buat kenangan tak terlupakan</p>

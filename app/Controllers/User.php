@@ -46,8 +46,8 @@ class User extends BaseController
             'title' => 'My Favourite',
             'activePage' => 'favourite',
             'favourites' => [
-                ['id' => 1, 'name' => 'Bali', 'location' => 'Indonesia', 'price' => 2500000, 'rating' => 4.8, 'image' => 'dest-bali.svg'],
-                ['id' => 4, 'name' => 'Komodo Island', 'location' => 'NTT', 'price' => 4000000, 'rating' => 4.9, 'image' => 'dest-komodo.svg'],
+                ['id' => 1, 'name' => 'Bali', 'location' => 'Indonesia', 'price' => 2500000, 'rating' => 4.8, 'image' => 'dest-bali.jpg'],
+                ['id' => 4, 'name' => 'Komodo Island', 'location' => 'NTT', 'price' => 4000000, 'rating' => 4.9, 'image' => 'dest-komodo.jpg'],
             ]
         ];
 
